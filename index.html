@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+
+</head>
+<body>
+    <header class="menu">
+        <p class="cajerotxt">
+            CAJERO AUTOMÁTICO
+        </p>
+        <a class="crearCuenta" href="crear-cuenta.html">
+            CREAR CUENTA
+        </a>
+    </header>
+    <form id="formulario_caja">
+        <div class="formulario">
+            <h1>INICIO DE SESIÓN</h1>
+            <input type="text" id="login_user_input" placeholder="Usuario">
+            <input type="password" id="login_pass_input" placeholder="Contraseña">
+            <button id="boton_login">INICIAR</button>
+        </div>
+        <div class="otras_opciones">
+            <a href="crear-cuenta.html">
+                ¿No tienes cuenta? Crear una
+            </a>
+        </div>
+    </form>
+    <script defer src="./js/login.js"></script>
+</body>
+</html>

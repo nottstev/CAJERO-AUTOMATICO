@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cajero.css">
+    <title>Cajero automatico</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="menu">
+        <a href="index.html" id="back" onclick="localStorage.clear(); window.location.href='index.html';" style="color: #F8FAFC;">
+            ⌂ CERRAR SESION
+        </a>
+        <div id="UsuarioCaja">
+            CARGANDO USUARIO...
+        </div>
+    </header>
+    <section class="cajero_caja">
+        <div class="cuenta">
+            <div id="idUsuarioCaja">
+
+            </div>
+            <div id="nombreUsuarioCaja">
+
+            </div>
+            <div id="montoUsuarioCaja">
+                
+            </div>
+
+            <div class="opcionestrx">
+                <a id="trx">Transferir</a>
+                <a id="his">Historial</a>
+            </div>
+        </div>
+        <div class="RyD">
+            <h3>OPERACIONES EN EFECTIVO</h3>
+            <div>
+                <input type="number" id="monto_deposito_input" placeholder="Monto a depositar (Q)">
+                <button id="boton_depositar" style="cursor: pointer;">DEPOSITAR</button>
+            </div>
+
+            <div>
+                <input type="number" id="monto_retiro_input" placeholder="Monto a retirar (Q)">
+                <button id="boton_retirar" style="cursor: pointer;">RETIRAR</button>
+            </div>
+        </div>
+        <div id="transferenciaCaja">
+            <h3>TRANSFERENCIAS</h3>
+            <input type="number" id="id_destino_input" placeholder="ID de la persona (6 dígitos)">
+            <input type="number" id="monto_input" placeholder="Monto a enviar (Q)">
+            <button id="boton_transferir" style="cursor: pointer;">Enviar Dinero</button>
+        </div>
+
+        <div id="historialCaja">
+            <h3>HISTORIAL</h3>
+            <table style="width: 100%; border-collapse: collapse; text-align: center;">
+                <thead>
+                    <tr style="background-color: #1E293B; border: 1px solid #2563EB;border-radius: 0.25rem;">
+                        <th>TIPO</th>
+                        <th>USUARIO RELACIONADO</th>
+                        <th>MONTO</th>
+                        <th>FECHA Y HORA</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla_historial_body">
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script defer src="./js/cajero.js"></script>
+</body>
+</html>
