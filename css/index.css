@@ -1,0 +1,100 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 20px;
+    font-style: normal;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F172A;
+    color: #F8FAFC;
+}
+* {
+    font-family: 'JetBrains Mono', monospace;
+}
+a{
+    text-decoration: none;
+    color: #F8FAFC;
+}  
+.menu{
+    width: 100%;
+    height: 5rem;
+    background: #1E293B;
+    border-bottom: 3px solid #2563EB;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+.cajerotxt{
+    margin-left: 5rem;
+    user-select: none;
+}
+.crearCuenta{
+    margin-right: 5rem;
+}
+#formulario_caja{
+    background-color: #1E293B;
+    width: 50rem;
+    height: 90%;
+    margin: 3rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+}
+.formulario{
+    width: 30rem;
+    height: 20rem;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(
+    135deg,
+    #102F7A 0%,
+    #1A4BB8 100%
+    );
+    border-radius: 0.25rem;
+}
+#login_user_input, #login_pass_input{
+    all: unset;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    text-align: center;
+    border: 1px solid #2563EB;
+    color: #F8FAFC;
+}
+input::-ms-reveal {
+    filter: invert(1);
+}
+.otras_opciones{
+    width: 30rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+#boton_login{
+    all: unset;
+    width: 100%;
+    height: 2rem;
+    background-color: #2563EB;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
